@@ -34,7 +34,7 @@ encrypted_pdf_bytes = cipher.encrypt(padded_pdf_bytes)
 compressed_pdf_bytes = zlib.compress(encrypted_pdf_bytes)
 
 # Embed the compressed and encrypted PDF bytes into the image
-cover_image = "coba.png"
+cover_image = "pemandangan.png"
 output_image = "output.png"
 encrypted_image = lsb.hide(cover_image, compressed_pdf_bytes)
 encrypted_image.save(output_image)

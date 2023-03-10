@@ -22,7 +22,7 @@ cipher = DES3.new(key, DES3.MODE_CBC, iv)
 encrypted_data = cipher.encrypt(pdf_data)
 
 # Load the carrier image to hide the encrypted PDF within it
-carrier_filename = 'coba.png'
+carrier_filename = 'pemandangan.png'
 
 # Embed the encrypted PDF data within the carrier image using LSB steganography
 secret = lsb.hide(carrier_filename, encrypted_data)
