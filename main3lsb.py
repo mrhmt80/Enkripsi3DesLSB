@@ -1,3 +1,5 @@
+#Enkripsi PDF Menggunakan Algoritma 3Des Dan LSB (Steganografi)
+
 from Crypto.Cipher import DES3
 from stegano import lsb
 import os
